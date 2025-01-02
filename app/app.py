@@ -1,6 +1,6 @@
 import os
 from flask import Flask, jsonify  # jsonify pro vracení JSON
-import db
+from . import db
 
 app = Flask(__name__)
 
