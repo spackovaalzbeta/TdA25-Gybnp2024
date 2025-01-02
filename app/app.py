@@ -1,7 +1,6 @@
 import os
-
-from flask import Flask
-from . import db
+from flask import Flask, jsonify  # jsonify pro vracení JSON
+import db
 
 app = Flask(__name__)
 
@@ -17,11 +16,14 @@ except OSError:
 
 db.init_app(app)
 
-
 @app.route('/')
 def hello_world():  # put application's code here
     return "Hello TdA"
 
+# Nový API endpoint pro /api
+@app.route('/api', methods=['GET'])
+def get_organization():
+    return jsonify({"organization": "Student Cyber Games"}) 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True) 
