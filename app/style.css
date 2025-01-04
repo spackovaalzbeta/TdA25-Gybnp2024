@@ -1,0 +1,58 @@
+h1 {text-align: center;
+font-size: 45px;  }
+
+h2 {text-align: center;
+font-size: 35px;}
+
+p {text-align: center;
+font-size: 25px;}
+
+header {text-align: center; }
+
+nav {background-color: #0070bb;}
+
+nav a {padding: 5px; color: white;
+    text-decoration: none;
+    padding-left: 60px; padding-right: 60px;
+    display: inline-block
+    }
+
+nav a:hover,
+nav a:focus {background-color: #395A9A;
+          color: #ffffff;
+          transition: 0.6s}
+
+form {text-align: center;
+padding: 15px;}
+body {background-color: #F6F6F6;}
+h3 {font-size: 30px;}
+p {text-align: center;}
+#con_mrizka {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #395A9A;
+}
+
+#mrizka td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    border: 2px solid #000000;    }
+
+#mrizka td.empty {
+    background-color: #f0f0f0;}
+
+#mrizka td.x {
+    color: #e31837;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold}
+
+#mrizka td.o {
+    color: #0070bb;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;}

@@ -20,7 +20,7 @@ db.init_app(app)
 def hello_world():  # put application's code here
     return "Hello TdA"
 
-# Nový API endpoint pro /api
+#API endpoint pro /api
 @app.route('/api', methods=['GET'])
 def get_organization():
     return jsonify({"organization": "Student Cyber Games"}) 
