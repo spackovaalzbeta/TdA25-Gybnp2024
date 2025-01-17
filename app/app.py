@@ -1,6 +1,6 @@
 import os
 from flask import Flask, jsonify  # jsonify pro vracení JSON
-from . import db
+
 from flask_restful import Api, Resource, reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 import uuid

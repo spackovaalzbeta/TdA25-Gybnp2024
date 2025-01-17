@@ -1,4 +1,3 @@
-import flask_restful
 from app import app, db
 
 with app.app_context():
